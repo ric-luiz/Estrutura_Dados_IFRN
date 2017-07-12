@@ -181,7 +181,7 @@ public class Grafo {
             }
         }
         
-        return "0";
+        return -100;
     }
     
     //estou removendo como um grafo nao direcionado

@@ -154,7 +154,7 @@ public class Labirinto {
     }
     
     private String lerArquivo() throws FileNotFoundException, IOException{
-        File f = new File("./mapa2.txt");       
+        File f = new File("./mapa.txt");       
         BufferedReader br = new BufferedReader(new FileReader(f));
         String linhaLeitura;
         String resultado = "";
