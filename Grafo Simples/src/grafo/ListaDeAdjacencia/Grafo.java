@@ -20,27 +20,27 @@ public class Grafo {
     public static final int INDEFINIDO = -1;
     
     public class Vertice {
-        char nome;
-        List<Aresta> adj;
+        public char nome;
+        public List<Aresta> adj;
 
         Vertice(char nome) {
             this.nome = nome;
             this.adj = new ArrayList<Aresta>();
         }
 
-        void addAdj(Aresta e) {
+        public void addAdj(Aresta e) {
             adj.add(e);
         }
         
-        void remAdj(Aresta e){
+        public void remAdj(Aresta e){
             this.adj.remove(e);
         }
     }
 
     public class Aresta {
-        Vertice origem;
-        Vertice destino;
-        Object peso;
+        public Vertice origem;
+        public Vertice destino;
+        public Object peso;
 
         Aresta(Vertice origem, Vertice destino, Object peso) {
             this.origem = origem;
@@ -91,22 +91,22 @@ public class Grafo {
         
     }
 
-    List<Vertice> vertices;
-    List<Aresta> arestas;
+    public List<Vertice> vertices;
+    public List<Aresta> arestas;
 
     public Grafo() {
         vertices = new ArrayList<Vertice>();
         arestas = new ArrayList<Aresta>();
     }
 
-    Vertice addVertice(char nome) {
+    public Vertice addVertice(char nome) {
         Vertice v = new Vertice(nome);
         vertices.add(v);
         return v;
     }
     
     //Estou adicionando como se fosse um grafo nao direcionado
-    Aresta addAresta(Vertice origem, Vertice destino, Object peso) {
+    public Aresta addAresta(Vertice origem, Vertice destino, Object peso) {
         //como o grafo é nao direcionado adicionamos 2 arestas, uma para ir e outra para voltar
         Aresta e = new Aresta(origem, destino,peso);
 //        Aresta b = new Aresta(destino, origem,peso);

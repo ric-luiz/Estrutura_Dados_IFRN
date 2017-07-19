@@ -33,51 +33,51 @@ public class Main {
 
         System.out.println("");
 
-        //Imprimir matriz pesos
+//        //Imprimir matriz pesos
         int contador = 0;                    
-        
-//        A partir daqui é a logica para encontrar o menor caminho        
-        ArrayList<List<Integer>> caminhoEncontradosEstrela = new ArrayList<>();
-                
-        //vai pegar todas as saidas e calcular os caminhos para elas
-        for(int j = 0; j < l.encontrarIndexVerticeNoLabirinto('3').size(); j++){
-            caminhoEncontradosEstrela.add(l.listaPosicoesIndexVertices(l.g.pathAEstrela(l.encontrarIndexVerticeNoLabirinto('2').get(0), l.encontrarIndexVerticeNoLabirinto('3').get(j), l.linha, l.coluna)));
-        }                        
-        
-        List<Integer> caminhoMenorEstrela = l.menorCustoDosCaminhos(caminhoEncontradosEstrela);                
-        if(caminhoMenorEstrela == null){
-            throw new Exception("Não existe saida para o labirinto!");
-        }        
-        
-        System.out.print("O menor caminho entros as rotas: ");
-        for (int i = 0; i < caminhoMenorEstrela.size(); i++) {
-            System.out.print(caminhoMenorEstrela.get(i) + " ");
-        }
-        
-        System.out.println("");
-        System.out.println("");
-                
-        //Imprimir matriz
-        System.out.println("Algoritmo de busca A* ");
-        System.out.println("");
-        contador = 0;
-        for (int i = 0; i < l.linha; i++) {
-            for (int j = 0; j < l.coluna; j++) {
-                
-                if(estaNaLista(caminhoMenorEstrela,contador)){
-                    System.out.print("x ");
-                } else {
-                    System.out.print(l.g.vertices.get(contador).nome + " ");
-                }
-                
-                contador++;
-            }
-            System.out.println(" ");
-        }
-
-        System.out.println("");
-        System.out.println("----------------------------------------------------");
-        System.out.println("");
+//        
+////        A partir daqui é a logica para encontrar o menor caminho        
+//        ArrayList<List<Integer>> caminhoEncontradosEstrela = new ArrayList<>();
+//                
+//        //vai pegar todas as saidas e calcular os caminhos para elas
+//        for(int j = 0; j < l.encontrarIndexVerticeNoLabirinto('3').size(); j++){
+//            caminhoEncontradosEstrela.add(l.listaPosicoesIndexVertices(l.g.pathAEstrela(l.encontrarIndexVerticeNoLabirinto('2').get(0), l.encontrarIndexVerticeNoLabirinto('3').get(j), l.linha, l.coluna)));
+//        }                        
+//        
+//        List<Integer> caminhoMenorEstrela = l.menorCustoDosCaminhos(caminhoEncontradosEstrela);                
+//        if(caminhoMenorEstrela == null){
+//            throw new Exception("Não existe saida para o labirinto!");
+//        }        
+//        
+//        System.out.print("O menor caminho entros as rotas: ");
+//        for (int i = 0; i < caminhoMenorEstrela.size(); i++) {
+//            System.out.print(caminhoMenorEstrela.get(i) + " ");
+//        }
+//        
+//        System.out.println("");
+//        System.out.println("");
+//                
+//        //Imprimir matriz
+//        System.out.println("Algoritmo de busca A* ");
+//        System.out.println("");
+//        contador = 0;
+//        for (int i = 0; i < l.linha; i++) {
+//            for (int j = 0; j < l.coluna; j++) {
+//                
+//                if(estaNaLista(caminhoMenorEstrela,contador)){
+//                    System.out.print("x ");
+//                } else {
+//                    System.out.print(l.g.vertices.get(contador).nome + " ");
+//                }
+//                
+//                contador++;
+//            }
+//            System.out.println(" ");
+//        }
+//
+//        System.out.println("");
+//        System.out.println("----------------------------------------------------");
+//        System.out.println("");
         
         System.out.println("Algoritmo Dijkstra normal");
         System.out.println("");
