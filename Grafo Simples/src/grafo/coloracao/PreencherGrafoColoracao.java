@@ -42,19 +42,19 @@ public class PreencherGrafoColoracao {
         cores.add(new Cor("#ff00ff","#000000"));
         cores.add(new Cor("#0000ff","#ffffff"));    
         cores.add(new Cor("#00ffff","#000000"));    
-        cores.add(new Cor("#00ff00","#000000"));  
-        cores.add(new Cor("#ffff00","#000000"));
-        cores.add(new Cor("#7f0000","#ffffff"));  
-        cores.add(new Cor("#7f007f","#ffffff"));
-        cores.add(new Cor("#00007f","#ffffff"));
-        cores.add(new Cor("#007f7f","#ffffff"));        
-        cores.add(new Cor("#007f00","#ffffff"));
-        cores.add(new Cor("#827f00","#000000"));
-        cores.add(new Cor("#000000","#ffffff"));
-        cores.add(new Cor("#333333","#ffffff"));
-        cores.add(new Cor("#4c4c4c","#ffffff"));
-        cores.add(new Cor("#b2b2b2","#000000"));  
-        cores.add(new Cor("#ffffff","#000000"));        
+//        cores.add(new Cor("#00ff00","#000000"));  
+//        cores.add(new Cor("#ffff00","#000000"));
+//        cores.add(new Cor("#7f0000","#ffffff"));  
+//        cores.add(new Cor("#7f007f","#ffffff"));
+//        cores.add(new Cor("#00007f","#ffffff"));
+//        cores.add(new Cor("#007f7f","#ffffff"));        
+//        cores.add(new Cor("#007f00","#ffffff"));
+//        cores.add(new Cor("#827f00","#000000"));
+//        cores.add(new Cor("#000000","#ffffff"));
+//        cores.add(new Cor("#333333","#ffffff"));
+//        cores.add(new Cor("#4c4c4c","#ffffff"));
+//        cores.add(new Cor("#b2b2b2","#000000"));  
+//        cores.add(new Cor("#ffffff","#000000"));        
     }
     
     private void colorir_vertices(){

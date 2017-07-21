@@ -9,8 +9,7 @@ import java.io.IOException;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        grafo1();
-        grafo2();
+        grafo1();        
     }
 
     public static void grafo1() throws IOException {
@@ -50,14 +49,6 @@ public class Main {
 //        }
 //
 //        System.out.println("");        
-    }
-
-    public static void grafo2() throws IOException {
-        PreencherGrafoColoracao l = new PreencherGrafoColoracao();
-        l.preencherMtatrizManual();
-        l.construirGrafo();
-        
-        l.printgrafo(true, "grafo2","circo");
     }
 
 }
